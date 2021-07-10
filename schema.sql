@@ -9,8 +9,8 @@ CREATE TABLE users (
   password VARCHAR(30) NOT NULL,
   profile_photo_url TEXT,
   email VARCHAR(50) NOT NULL,
-  firstName VARCHAR(50) NOT NULL,
-  lastName VARCHAR(50) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
   address VARCHAR(80),
   city VARCHAR(80),
   state VARCHAR(4),
@@ -40,7 +40,7 @@ CREATE TABLE reviews (
   rating INT,
   owner_response TEXT,
   date timestamp,
-  helpfulnessCount INT DEFAULT 0,
+  helpfulness_count INT DEFAULT 0,
 
   CONSTRAINT fk_user
     FOREIGN KEY(user_id)
