@@ -24,6 +24,9 @@ CREATE TABLE shops (
   city VARCHAR(80) NOT NULL,
   state VARCHAR(4) NOT NULL,
   zip INT NOT NULL,
+  date timestamp,
+  phone_number TEXT,
+  website TEXT,
   animal_friendly boolean
 );
 
@@ -72,3 +75,5 @@ CREATE INDEX reviews_user_id_index ON reviews(user_id);
 CREATE INDEX reviews_shop_id_index ON reviews(shop_id);
 CREATE INDEX shops_photos_shop_id_index ON shops_photos(shop_id);
 CREATE INDEX reviews_photos_review_id_index ON reviews_photos(review_id);
+
+-- INSERT INTO DB
