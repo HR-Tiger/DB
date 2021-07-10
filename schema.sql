@@ -78,26 +78,26 @@ CREATE INDEX reviews_photos_review_id_index ON reviews_photos(review_id);
 
 -- INSERT INTO DB
 COPY users(user_id, first_name, last_name, email, password, address,city, state, zip, profile_photo_url)
-FROM '/Users/neildudani/Desktop/Neil/HackReactor/Immersive/Projects/BlueOcean/DB/data/users.csv'
+FROM '/usr/share/app/users.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY shops(shop_id, name, address, city, state, zip, date,phone_number, website, animal_friendly)
-FROM '/Users/neildudani/Desktop/Neil/HackReactor/Immersive/Projects/BlueOcean/DB/data/shops.csv'
+FROM '/usr/share/app/shops.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY reviews(review_id, user_id, shop_id, summary, category,description, rating, owner_response, date, helpfulness_count)
-FROM '/Users/neildudani/Desktop/Neil/HackReactor/Immersive/Projects/BlueOcean/DB/data/reviews.csv'
+FROM '/usr/share/app/reviews.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY shops_photos(photo_id, shop_id, url)
-FROM '/Users/neildudani/Desktop/Neil/HackReactor/Immersive/Projects/BlueOcean/DB/data/shops_photos.csv'
+FROM '/usr/share/app/shops_photos.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY reviews_photos(photo_id, review_id, url)
-FROM '/Users/neildudani/Desktop/Neil/HackReactor/Immersive/Projects/BlueOcean/DB/data/reviews_photos.csv'
+FROM '/usr/share/app/reviews_photos.csv'
 DELIMITER ','
 CSV HEADER;
