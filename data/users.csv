@@ -1,4 +1,4 @@
-id,first_name,last_name,email,password,address,city,state,zip,profile_photo
+user_id,first_name,last_name,email,password,address,city,state,zip,profile_photo_url
 1,Arty,Redfearn,aredfearn0@disqus.com,Male,58758 Caliangt Junction,Landskrona,M,1,http://dummyimage.com/172x100.png/ff4444/ffffff
 2,Esra,Kennion,ekennion1@bbc.co.uk,Male,78655 Bayside Place,Calamba,,2,http://dummyimage.com/110x100.png/dddddd/000000
 3,Luigi,Tickner,ltickner2@gravatar.com,Genderfluid,7056 8th Drive,Amsterdam Noord west,07,3,http://dummyimage.com/212x100.png/cc0000/ffffff
