@@ -26,6 +26,7 @@ CREATE TABLE shops (
   zip INT NOT NULL,
   date TEXT,
   phone_number TEXT,
+  price INT,
   website TEXT,
   animal_friendly boolean
 );
