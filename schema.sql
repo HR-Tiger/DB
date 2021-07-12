@@ -7,6 +7,7 @@ CREATE DATABASE coffee_shop_db;
 CREATE TABLE users (
   user_id serial PRIMARY KEY,
   password VARCHAR(30) NOT NULL,
+  username TEXT,
   profile_photo_url TEXT,
   email VARCHAR(50) NOT NULL,
   first_name VARCHAR(50) NOT NULL,
