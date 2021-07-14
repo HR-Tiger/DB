@@ -57,6 +57,7 @@ CREATE TABLE shops_photos (
   photo_id serial PRIMARY KEY,
   shop_id INT NOT NULL,
   url TEXT,
+
   CONSTRAINT fk_shop
     FOREIGN KEY(shop_id)
       REFERENCES shops(shop_id)
